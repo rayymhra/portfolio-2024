@@ -1,0 +1,27 @@
+bu annisa
+web portfolio
+
+konsep lol
+nama
+button-> home, about(biodata diri), resume(daftar riwayat pendidikan sd,smp dimana, pengalaman kerja kalo ada), portfolio(projek yg udah dibuat(dikategoriin kaya app, desktop, web)service, contact)
+responsive
+copyright
+link ke medsos
+
+idk if i should use sidebar but she gives the example that using sidebar
+okey i've asked, she says it's up to me
+
+
+
+referensi website portfolio
+- freepik
+- themewagon
+- slidego
+- colorlib
+- free-css
+- poweredtemplate
+- postermywall
+
+
+deadline 16 oktober
+paling lambat 22

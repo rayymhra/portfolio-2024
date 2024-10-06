@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #111111;
+}
+
+.bg-blur {
+  backdrop-filter: blur(10px);
+  background-color: transparent;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style to ensure proper spacing */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  font-size: 1.1rem;
+}
+
+.nav-link {
+  margin: 0 15px;
+}
+
+.btn-btn {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.navlink:hover {
+  color: #e6e6e6;
+}
+
+/* Welcome Text Section */
+.welcome {
+    margin-top: 4rem;
+  }
+  
+  .welcome-text {
+    color: #ffffffab;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .wel {
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .cursor {
+    display: inline-block;
+    background-color: transparent;
+    margin-left: 5px;
+    animation: blink 0.8s infinite;
+  }
+  
+  /* Blinking Cursor Animation */
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .my-name {
+
+  }
