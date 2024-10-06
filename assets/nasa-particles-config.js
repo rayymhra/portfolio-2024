@@ -1,64 +1,49 @@
 particlesJS("particles-js", {
     "particles": {
       "number": {
-        "value": 160,
+        "value": 80, // Reduce particle count for a more spaced-out feel
         "density": {
           "enable": true,
           "value_area": 800
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#ffffff" // Keep the particles white to resemble stars
       },
       "shape": {
-        "type": "circle",
+        "type": "circle", // Simple circle shapes for particles
         "stroke": {
           "width": 0,
           "color": "#000000"
-        },
-        "polygon": {
-          "nb_sides": 5
         }
       },
       "opacity": {
-        "value": 1,
-        "random": false,
+        "value": 0.8, // Slightly transparent to resemble distant stars
+        "random": true, // Randomize opacity for a more natural look
         "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
+          "enable": false
         }
       },
       "size": {
-        "value": 3,
+        "value": 2.5, // Set a smaller particle size for a subtle effect
         "random": true,
         "anim": {
-          "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
-          "sync": false
+          "enable": false
         }
       },
       "line_linked": {
-        "enable": true,
-        "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
+        "enable": false // Disable connecting lines for a clean space vibe
       },
       "move": {
         "enable": true,
-        "speed": 6,
+        "speed": 0.8, // Slower particle movement for a subtle floating effect
         "direction": "none",
-        "random": false,
+        "random": true,
         "straight": false,
-        "out_mode": "out",
+        "out_mode": "out", // Particles will move outside the canvas and disappear
         "bounce": false,
         "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
+          "enable": false
         }
       }
     },
@@ -67,37 +52,25 @@ particlesJS("particles-js", {
       "events": {
         "onhover": {
           "enable": true,
-          "mode": "grab"
+          "mode": "bubble" // Slightly increase particle size when hovered
         },
         "onclick": {
           "enable": true,
-          "mode": "push"
+          "mode": "repulse" // On click, particles will move away slightly
         },
         "resize": true
       },
       "modes": {
-        "grab": {
-          "distance": 140,
-          "line_linked": {
-            "opacity": 1
-          }
-        },
         "bubble": {
-          "distance": 400,
-          "size": 40,
-          "duration": 2,
-          "opacity": 8,
-          "speed": 3
+          "distance": 200, // Particle expands slightly when hovered
+          "size": 4, // Increased size on hover
+          "duration": 1, // Effect lasts for 1 second
+          "opacity": 0.8,
+          "speed": 1
         },
         "repulse": {
-          "distance": 200,
+          "distance": 150,
           "duration": 0.4
-        },
-        "push": {
-          "particles_nb": 4
-        },
-        "remove": {
-          "particles_nb": 2
         }
       }
     },
