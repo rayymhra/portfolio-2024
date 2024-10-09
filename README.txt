@@ -18,3 +18,12 @@ education -> tahun, prestasi
 sd -> tryout sd nilai tertinggi ke-4 seangkatan
 smp -> 10 lulusan terbaik
 smk -> juara 1 lks internal desktop
+
+
+skills
+- html, css, js, bootstrap
+- php, laravel
+- git, github
+- construct2, godot
+- vb.net
+- mysql
