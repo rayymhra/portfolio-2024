@@ -104,15 +104,32 @@ body {
 
 .img-skill {
   margin: 3rem;
-  height: 90px;
+  height: 80px;
   width: auto;
 }
 
 .skills {
   background-color: #292929;
   color: white;
+  width: 200px;
+  /* box-shadow: 1px 1px 1px #452950; */
+  box-shadow: 0 0 10px rgba(69, 41, 80, 0.7);
 }
 
 .skill-section a{
   text-decoration: none;
+}
+
+.skill-section {
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+
+.title-skill {
+  font-size: 18px;
+}
+
+.certificate-section {
+  padding-left: 15rem;
+  padding-right: 15rem;
 }
