@@ -23,14 +23,13 @@
         <a class="navbar-brand" href="#">
           <i class="bi bi-braces"></i>&nbsp; Rayya Mahira
         </a>
-
         <div class="collapse navbar-collapse justify-content-center">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link active" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">About</a>
+              <a class="nav-link active actived" href="#">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#">Projects</a>
@@ -40,10 +39,35 @@
             </li>
           </ul>
         </div>
-
         <a href="" target="_blank" class="btn-btn">Resume</a>
       </div>
     </nav>
+
+    <section class="about-me-section">
+      <div class="row">
+        <div class="col-4">
+          <div class="container text-center">
+            <div class="polaroid-frame">
+              <img
+                src="assets/img/my pict.jpg"
+                alt="Rayya Nahira"
+                class="mine-pict w-100"
+              />
+              <div class="caption">Get To Know Me ~</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-8">
+          <h1 class="text-white about-title">Hi, I'm Rayya Mahira</h1>
+          <h2 class="my-something text-white">
+            I'm a
+            <span class="something"></span>
+            <span class="cursor">|</span>
+          </h2>
+        </div>
+      </div>
+    </section>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -52,5 +76,42 @@
       crossorigin="anonymous"
     ></script>
     <script src="assets/script.js"></script>
-</body>
+    <script>
+      const textArray = ["Software Engineer","Robotics"];
+      let textIndex = 0;
+      let charIndex = 0;
+      let currentText = "";
+      let isDeleting = false;
+
+      const typeWriter = () => {
+        const textElement = document.querySelector(".something");
+        const cursorElement = document.querySelector(".cursor");
+
+        if (!isDeleting && charIndex < textArray[textIndex].length) {
+          // Typing effect
+          currentText += textArray[textIndex].charAt(charIndex);
+          textElement.textContent = currentText;
+          charIndex++;
+          setTimeout(typeWriter, 100); // Typing speed
+        } else if (isDeleting && charIndex >= 0) {
+          // Deleting effect
+          currentText = currentText.substring(0, charIndex);
+          textElement.textContent = currentText;
+          charIndex--;
+          setTimeout(typeWriter, 50); // Deleting speed
+        } else {
+          // Toggle between typing and deleting
+          isDeleting = !isDeleting;
+
+          if (!isDeleting) {
+            textIndex = (textIndex + 1) % textArray.length; // Go to the next text
+          }
+
+          setTimeout(typeWriter, 500); // Pause between cycles
+        }
+      };
+
+      typeWriter();
+    </script>
+  </body>
 </html>
