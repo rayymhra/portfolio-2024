@@ -10,8 +10,111 @@ body {
   background-color: #111111;
   margin: 0;
   padding: 0;
-  transition: background 1s ease-in-out;
 }
+
+/* .btn-btn {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 25px;
+} */
+
+/* .btn-btn {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 5px 15px;
+  border-radius: 25px;
+  background-color: transparent;
+  transition: background 0.5s ease, border 0.5s ease; 
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  clip-path: inset(0); 
+}
+
+.btn-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;  
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, #110515, #221545, #68388d, #855ab4, #c850a7);
+  transition: all 0.5s ease;
+  z-index: -1;  
+  overflow: hidden;
+}
+
+.btn-btn:hover::before {
+  left: -50%;
+}
+
+.btn-btn:hover {
+  border-color: transparent;
+  overflow: hidden;
+} */
+
+/* .btn-btn {
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: white;
+  border: 2px solid white;
+  text-decoration: none;
+  background-color: transparent; 
+  transition: 0.5s ease;
+  transition: border 0.5s ease, color 0.5s ease;
+}
+
+.btn-btn:hover {
+  border-image: linear-gradient(
+    to right,
+    rgba(178, 111, 203, 1) 0%,
+    rgba(104, 56, 141, 1) 100%
+  ) 1; 
+  color: transparent; 
+  background: radial-gradient(
+    circle,
+    rgba(178, 111, 203, 1) 0%,
+    rgba(104, 56, 141, 1) 100%
+  ); 
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  border-width: 2px;
+  transition: border-image 0.5s ease, color 0.5s ease;
+  border-radius: 10px;
+} */
+
+.btn-btn {
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid white;
+  text-decoration: none;
+  background-color: transparent; 
+  transition: 0.5s ease;
+}
+
+.btn-btn:hover {
+  padding: 4px 14px;
+  color: transparent; 
+  background: radial-gradient(
+    circle,
+    rgba(178, 111, 203, 1) 0%,
+    rgba(104, 56, 141, 1) 100%
+  ); 
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  box-shadow: 0 0 0 1px rgba(178, 111, 203, 1), 0 0 0 1px rgba(104, 56, 141, 1);
+  border: 1px solid rgba(255, 255, 255, 0);
+  transition: 0.5s ease;
+}
+
+
 
 /* NAVBAR */
 .bg-blur {
@@ -33,17 +136,6 @@ body {
   margin: 0 15px;
   transition: 0.5s ease;
 
-}
-
-.btn-btn {
-  color: white;
-  text-decoration: none;
-  border: 1px solid white;
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-radius: 25px;
 }
 
 .nav-link:hover {
@@ -115,12 +207,45 @@ body {
   color: #855ab4 !important;
 }
 
+
+
+/* SECTION */
+.section-title-wrapper {
+  text-align: center; 
+  width: 100%; 
+}
+
+.section-title {
+  position: relative;
+  color: white;
+  padding-bottom: 10px;
+  width: 110px;
+  margin: 0 auto; /* Center the title */
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 50%; /* Start at the center */
+  bottom: 0;
+  width: 100%; /* Match the width of the title */
+  height: 5px; /* Thickness of the underline */
+  background: linear-gradient(0deg, rgba(64,1,53,1) 0%, rgba(88,59,113,1) 100%);
+  border-radius: 5px; /* Rounded edges */
+  transform: translateX(-50%); /* Adjust for centering */
+}
+
+
+
+
+
 /* SKILL */
 
 .img-skill {
   margin: 3rem;
   height: 80px;
   width: auto;
+  transition: transform 0.5s ease;
 }
 
 .skills {
@@ -131,6 +256,7 @@ body {
   /* box-shadow: 0 0 10px rgba(143, 65, 173, 0.7); */
   margin-bottom: 10px;
   margin-right: 10px;
+  transition: all 0.5s ease;
 }
 
 .skill-section a {
@@ -148,6 +274,25 @@ body {
 
 .title-skill {
   font-size: 18px;
+  transition: background 0.5s ease, -webkit-text-fill-color 0.5s ease;
+  color: white;
+}
+
+.skills:hover .img-skill {
+  transform: scale(1.2); /* Enlarge the image */
+}
+
+.skills:hover .title-skill {
+  background: rgb(178, 111, 203);
+  background: radial-gradient(
+    circle,
+    rgba(178, 111, 203, 1) 0%,
+    rgba(104, 56, 141, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  transition: all 0.5s ease;
 }
 
 /* CERTIFICATE */
@@ -155,6 +300,18 @@ body {
 .certificate-section {
   padding-left: 15rem;
   padding-right: 15rem;
+}
+
+.awards-lists h5{
+  font-size: 300;
+}
+
+.awards-lists h6 {
+  color: #fff;
+}
+
+.awards-lists p {
+  color: #fff;
 }
 
 /* ABOUT */
