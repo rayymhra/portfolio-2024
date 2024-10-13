@@ -215,9 +215,9 @@ body {
   border-bottom: 3px solid #855ab4;
 }
 
-.code-title {
+.code-title i{
   color: #855ab4;
-  font-weight: bold;
+  font-weight: bold ;
 }
 
 
@@ -291,16 +291,24 @@ body {
   padding-right: 15rem;
 }
 
-.awards-lists h5{
+.certificate-lists h5{
   font-size: 300;
 }
 
-.awards-lists h6 {
-  color: #fff;
+.certificate-lists h6 {
+  color: #eeeeee;
+  font-weight: 300;
 }
 
-.awards-lists p {
-  color: #fff;
+.certificate-lists p {
+  color: #a3a3a3;
+  font-size: 14px;
+}
+
+/* PROJECTS */
+.projects-section {
+  padding-left: 15rem;
+  padding-right: 15rem;
 }
 
 /* ABOUT */
