@@ -326,6 +326,12 @@ body {
 .project-card {
   border: none;
   border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  transition: all 0.5s ease;
 }
 
 .project-card a {
@@ -336,14 +342,28 @@ body {
   color: white;
   border: 1px solid white;
   font-size: 21px;
-  padding: 5px 10px;
+  padding: 3px 7px;
   border-radius: 50px;
   margin-left: 10px;
+  transition: all 0.5s ease;
+}
 
+.project-card i:hover {
+  background: rgb(178, 111, 203);
+  background: radial-gradient(
+    circle,
+    rgba(178, 111, 203, 1) 0%,
+    rgba(104, 56, 141, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  transition: all 0.5s ease;
+  border-color: #855ab4;
 }
 
 .project-link {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .project-img {
@@ -352,6 +372,9 @@ body {
 
 .project-title{
   color: white;
+  font-weight: 500;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .project-title:hover{
   background: rgb(178, 111, 203);
@@ -367,7 +390,9 @@ body {
 }
 
 .project-description {
-  color: white;
+  color: #a3a3a3;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .below-img-project {
@@ -387,7 +412,12 @@ body {
 
 .projects-section .card-body:hover {
   background-color: #292929;
+}
 
+
+.project-tech-stack .badge {
+  border: 1px solid #a3a3a3bd;
+  font-weight: 400;
 }
 
 /* ABOUT */
@@ -450,4 +480,24 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
+}
+
+.my-description {
+  color: #a3a3a3;
+  margin-left: 1rem;
+}
+
+
+/* FOOTER */
+.footer {
+  border-top: 1px solid white;
+}
+
+.copyright a {
+  color: white;
+  margin-right: 3px;
+}
+
+.copyright a:hover {
+  color: #a3a3a3;
 }
