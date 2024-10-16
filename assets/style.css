@@ -301,6 +301,7 @@ body {
 .certificate-section {
   padding-left: 15rem;
   padding-right: 15rem;
+  margin-top: 8rem;
 }
 
 .certificate-lists h5{
@@ -321,6 +322,7 @@ body {
 .projects-section {
   padding-left: 15rem;
   padding-right: 15rem;
+  margin-top: 8rem;
 }
 
 .project-card {
@@ -500,4 +502,21 @@ body {
 
 .copyright a:hover {
   color: #a3a3a3;
+}
+
+
+
+.education-section .card {
+  background-color: #1c1e24;
+  border: none;
+  color: white;
+  border-radius: 15px;
+}
+
+.education-section .card p, .card h5, .card ul {
+  margin-bottom: 0.5rem;
+}
+
+.education-section .card ul {
+  padding-left: 20px;
 }
