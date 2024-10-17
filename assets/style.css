@@ -489,10 +489,72 @@ body {
   margin-left: 1rem;
 }
 
+/* EDUCATION */
+.education-section {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  margin-top: 8rem;
+}
+.education-section .card {
+  background-color: #292929;
+  border: none;
+  color: white;
+  border-radius: 15px;
+  
+  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.education-section .card ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.edu-date {
+  color: #c5c5c5;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.sch-logo {
+  margin-right: 1rem;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.education-section .row .col-1 {
+  border-right: 2px solid #a3a3a3;
+  /* padding-right: 1rem;  */
+}
+
+.education-section .row .col-11 {
+  padding-left: 1rem;
+}
+
+/* .education-section .row .col-11:hover {
+  .education-section .row .col-1 {
+  border-right: 2px solid #855ab4;
+  }
+} */
+
+.education-section .row .col-11:hover ~ .col-1 {
+  border-right: 2px solid #855ab4;
+}
+
+.btn-wrap {
+  margin-bottom: 3rem;
+}
+
 
 /* FOOTER */
 .footer {
   border-top: 1px solid white;
+  margin-top: 8rem;
 }
 
 .copyright a {
@@ -505,18 +567,3 @@ body {
 }
 
 
-
-.education-section .card {
-  background-color: #1c1e24;
-  border: none;
-  color: white;
-  border-radius: 15px;
-}
-
-.education-section .card p, .card h5, .card ul {
-  margin-bottom: 0.5rem;
-}
-
-.education-section .card ul {
-  padding-left: 20px;
-}

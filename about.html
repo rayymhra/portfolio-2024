@@ -65,13 +65,15 @@
             <span class="cursor">|</span>
           </h2>
           <p class="my-description">
-            Aspiring engineer with a passion for learning and exploring new technologies. Currently focused on web programming, web design, desktop applications with VB.NET, and MySQL databases. Delving into game development, robotics, and IoT to merge creativity with tech innovation. New to cybersecurity and eager to expand my knowledge in this critical field. Excited to connect with like-minded professionals and contribute to the tech landscape.
+            Passionate about learning and exploring new technologies, with a
+            focus on full-stack web development, desktop apps, and MySQL. Also
+            delving into game development, Figma design, robotics, IoT, and
+            cybersecurity. Eager to innovate and connect with like-minded tech
+            enthusiasts.
           </p>
         </div>
       </div>
     </section>
-
-    
 
     <section class="education-section">
       <h2 class="text-white mb-5 text-center section-title">
@@ -79,39 +81,91 @@
         ><span>Educations</span
         ><span class="code-title"><i class="bi bi-chevron-right"></i></span>
       </h2>
-      <div class="container my-5">
-        <h2 class="text-center mb-4">Education</h2>
-        <div class="card p-3 mb-4">
-          <div class="d-flex">
-            <img src="digipen-logo.png" alt="Digipen Logo" class="me-3" style="width: 50px;">
-            <div>
-              <h5>Digipen Institute of Technology Singapore</h5>
-              <p>BS in Computer Science in Real-Time Interactive Simulation</p>
-              <p class="text-muted">Sep 2019 - Apr 2023</p>
-              <ul>
-                <li>Graduated with a Minor in Mathematics</li>
-                <li>President of Digipen Student Management Committee for freshman year</li>
-                <li>3-time recipient of the Dean's Honor List</li>
-              </ul>
-              <button class="btn btn-outline-secondary btn-sm me-2">🌐 Final Year Project</button>
-              <button class="btn btn-outline-secondary btn-sm">🌐 2nd Year Project</button>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-1">
+            <img
+              src="assets/img/sd.jpg"
+              alt="SDN Jatisampurna X Bekasi"
+              class="sch-logo mt-5"
+            />
+          </div>
+          <div class="col-11">
+            <p class="edu-date mt-5">Sep 2019 - Apr 2023</p>
+            <h5>SDN Jatisampurna X Bekasi</h5>
+            <ul>
+              <li>Nilai Try-Out Tertinggi ke-4</li>
+              <li>Juara 1 Lomba Fashion Show Kartini (Kelas 5)</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="" class="btn-btn" target="_blank">Documentation</a>
             </div>
           </div>
         </div>
-      
-        <div class="card p-3 mb-4">
-          <div class="d-flex">
-            <img src="sp-logo.png" alt="SP Logo" class="me-3" style="width: 50px;">
-            <div>
-              <h5>Singapore Polytechnic</h5>
-              <p>Diploma in Games Design and Development</p>
-              <p class="text-muted">Apr 2014 - May 2017</p>
+        <div class="row">
+          <div class="col-1">
+            <img src="assets/img/smp.webp" alt="MTs Annur" class="sch-logo" />
+          </div>
+          <div class="col-11">
+            <p class="edu-date">Sep 2019 - Apr 2023</p>
+            <h5>MTs Annur Klapanunggal</h5>
+            <ul>
+              <li>10 Lulusan Terbaik</li>
+              <li>Juara 3 Lomba Volly Classmeet</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="" class="btn-btn" target="_blank">Documentation</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <img
+              src="assets/img/smk.jpeg"
+              alt="SMK Bina Mandiri Multimedia"
+              class="sch-logo"
+            />
+          </div>
+          <div class="col-11">
+            <p class="edu-date">Sep 2019 - Present</p>
+            <h5>MTs Annur Klapanunggal</h5>
+            <ul>
+              <li>Juara 1 Lomba Desktop Application HappyMeet Vol.4</li>
+              <li>Juara Umum 2 Ajaran 2023-2024</li>
+              <li>Ongoing...</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="" class="btn-btn" target="_blank">Documentation</a>
             </div>
           </div>
         </div>
       </div>
-      
     </section>
+
+    <section class="interest-section">
+      <h2 class="text-white mb-5 text-center section-title">
+        <span class="code-title"><i class="bi bi-chevron-left"></i></span
+        ><span>My Interest</span
+        ><span class="code-title"><i class="bi bi-chevron-right"></i></span>
+      </h2>
+    </section>
+
+    <section class="community-section">
+      <h2 class="text-white mb-5 text-center section-title">
+        <span class="code-title"><i class="bi bi-chevron-left"></i></span
+        ><span>Communities I Joined</span
+        ><span class="code-title"><i class="bi bi-chevron-right"></i></span>
+      </h2>
+    </section>
+
+    <footer class="footer text-white text-center">
+      <p class="copyright mt-3">
+        &copy; 2024 Rayya Mahira |
+        <a href=""><i class="bi bi-github"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
@@ -122,7 +176,7 @@
     ></script>
     <script src="assets/script.js"></script>
     <script>
-      const textArray = ["Software Engineer","Robotics"];
+      const textArray = ["Software Engineer", "Robotics"];
       let textIndex = 0;
       let charIndex = 0;
       let currentText = "";
@@ -157,6 +211,25 @@
       };
 
       typeWriter();
+    </script>
+    <script>
+      const rows = document.querySelectorAll(".row");
+
+      rows.forEach((row) => {
+        const col11 = row.querySelector(".col-11");
+        const col1 = row.querySelector(".col-1");
+
+        if (col11 && col1) {
+          // Ensure both elements exist
+          col11.addEventListener("mouseenter", () => {
+            col1.style.borderRight = "2px solid #855ab4";
+          });
+
+          col11.addEventListener("mouseleave", () => {
+            col1.style.borderRight = "";
+          });
+        }
+      });
     </script>
   </body>
 </html>
