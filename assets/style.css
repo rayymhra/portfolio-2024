@@ -512,6 +512,12 @@ body {
   margin-bottom: 20px;
 }
 
+.education-section li {
+  color: #e6e6e6;
+  font-size: 14px;
+  font-weight: 300;
+}
+
 .edu-date {
   color: #c5c5c5;
   font-weight: 300;
@@ -550,6 +556,57 @@ body {
   margin-bottom: 3rem;
 }
 
+
+/* INTEREST SECTION */
+.interest-section {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  margin-top: 8rem;
+}
+
+.interest-section .card {
+  height: 300px;
+}
+
+.interest-section a {
+  text-decoration: none;
+}
+
+.interest-desc {
+  color: #e6e6e6;
+}
+
+.interest-section .card {
+  background-color: #333;
+}
+
+.interest-icon {
+  font-size: 3rem;
+  color: white;
+}
+
+
+.interest-icon:hover {
+  background: rgb(178, 111, 203);
+  background: radial-gradient(
+    circle,
+    rgba(178, 111, 203, 1) 0%,
+    rgba(104, 56, 141, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.interest-title {
+  color: #ffffff;
+}
+
+/* COMMUNITY SECTION */
+.community-section {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  margin-top: 8rem;
+}
 
 /* FOOTER */
 .footer {
