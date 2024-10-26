@@ -570,6 +570,7 @@ body {
 .interest-section .card {
   height: 300px;
   transition: 0.5s all ease ;
+  padding-top: 1rem;
 }
 
 .interest-section a {
@@ -581,7 +582,8 @@ body {
 }
 
 .interest-section .card {
-  background-color: #333;
+  background-color: transparent;
+  border: 1px solid #a3a3a3;
 }
 
 .interest-icon {
@@ -607,6 +609,7 @@ body {
 .interest-section .card:hover {
   box-shadow: 0 0 0 1px rgba(178, 111, 203, 1), 0 0 0 1px rgba(104, 56, 141, 1);
   transition: 0.5s all ease ;
+  background-color: #333;
 }
 
 .interest-title {
