@@ -538,6 +538,27 @@ body {
   margin-top: 10px;
 }
 
+.sch-name .php-attribute{
+  font-size: 1.1rem;
+  background: rgb(178, 111, 203);
+  background: radial-gradient(
+    circle,
+    rgba(178, 111, 203, 1) 0%,
+    rgba(104, 56, 141, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.quote {
+  color: #cdabda;
+}
+
+.edu-date i {
+  font-size: 14px;
+  margin-left: 3px;
+}
+
 .education-section .row .col-1 {
   border-right: 2px solid #a3a3a3;
   /* padding-right: 1rem;  */
