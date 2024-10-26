@@ -519,6 +519,8 @@ body {
   color: #e6e6e6;
   font-size: 14px;
   font-weight: 300;
+  list-style-type: none;
+  margin-left: -16px;
 }
 
 .edu-date {
@@ -674,3 +676,28 @@ body {
   margin-top: 8rem;
 }
 
+.send-email-form-section {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  margin-top: 8rem;
+}
+
+.send-email-form-section form {
+  background-color: #303030;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.form-input {
+  background-color: transparent;
+  border-radius: 7px;
+  border: 1px solid #a3a3a3;
+  padding: 5px;
+  color: #eeeeee;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+textarea {
+  height: 150px;
+}
