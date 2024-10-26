@@ -9,7 +9,7 @@ skills
 projects
 
 features
-- div follows mouse cursor
+- div follows mouse cursor -> highlight / light like in canva
 - particle js for stars
 - my picture is glitched when hovered
 - particle js in footer or contact maybe

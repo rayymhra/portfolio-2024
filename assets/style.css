@@ -232,6 +232,9 @@ body {
   font-weight: bold ;
 }
 
+.section-title {
+  font-family: 'Orbitron', sans-serif;
+}
 
 
 
@@ -566,6 +569,7 @@ body {
 
 .interest-section .card {
   height: 300px;
+  transition: 0.5s all ease ;
 }
 
 .interest-section a {
@@ -583,10 +587,11 @@ body {
 .interest-icon {
   font-size: 3rem;
   color: white;
+  transition: 0.5s all ease ;
 }
 
 
-.interest-icon:hover {
+.interest-section .card:hover .interest-icon{
   background: rgb(178, 111, 203);
   background: radial-gradient(
     circle,
@@ -595,6 +600,13 @@ body {
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: 0.5s all ease ;
+
+}
+
+.interest-section .card:hover {
+  box-shadow: 0 0 0 1px rgba(178, 111, 203, 1), 0 0 0 1px rgba(104, 56, 141, 1);
+  transition: 0.5s all ease ;
 }
 
 .interest-title {
@@ -607,6 +619,33 @@ body {
   padding-right: 15rem;
   margin-top: 8rem;
 }
+
+.cosmic-card {
+  background-color: #292929; /* Consistent with the theme’s skill and education sections */
+  color: #e6e6e6;
+  border: 1px solid #3a3a3a; /* Softer border */
+  border-radius: 15px;
+  transition: background 0.5s ease, box-shadow 0.5s ease;
+}
+
+.cosmic-card:hover {
+  background-color: #353535; 
+  box-shadow: 0 0 10px rgba(178, 111, 203, 0.5); 
+}
+
+.community-title {
+  color: #ffffff; 
+  font-weight: 600;
+  transition: 0.5s all ease ;
+}
+
+.cosmic-card:hover .community-title{
+  color: #b26fcb; 
+}
+
+
+
+
 
 /* FOOTER */
 .footer {

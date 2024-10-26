@@ -16,7 +16,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
       rel="stylesheet"
     />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-blur">
@@ -160,32 +163,14 @@
         <div class="col-4">
           <a href="">
             <div class="card">
-            <div class="card-body">
-              <div class="interest-icon text-center">
-                <i class="fas fa-code"></i>
-              </div>
-              <h4 class="interest-title text-center">
-                Programming
-              </h4>
-              <p class="text-center interest-desc">Building websites, apps, and solving challenges through code.</p>
-              <div class="text-center">
-                <button class="btn btn-btn">Learn More</button>
-              </div>
-            </div>
-          </div>
-          </a>
-        </div>
-        <div class="col-4">
-          <a href="">
-            <div class="card">
               <div class="card-body">
                 <div class="interest-icon text-center">
-                  <i class="fas fa-robot"></i>
+                  <i class="fas fa-code"></i>
                 </div>
-                <h4 class="interest-title text-center">
-                  Robotics
-                </h4>
-                <p class="text-center interest-desc">Creating innovative robots and automation systems.</p>
+                <h4 class="interest-title text-center">Programming</h4>
+                <p class="text-center interest-desc">
+                  Building websites, apps, and solving challenges through code.
+                </p>
                 <div class="text-center">
                   <button class="btn btn-btn">Learn More</button>
                 </div>
@@ -196,21 +181,38 @@
         <div class="col-4">
           <a href="">
             <div class="card">
-            <div class="card-body">
-              <div class="interest-icon text-center">
-                <i class="fas fa-fingerprint"></i>
-              </div>
-              <h4 class="interest-title text-center">
-                Cybersecurity
-              </h4>
-              <p class="text-center interest-desc">Exploring digital security and protecting systems.</p>
-              <div class="text-center">
-                <button class="btn btn-btn">Learn More</button>
+              <div class="card-body">
+                <div class="interest-icon text-center">
+                  <i class="fas fa-robot"></i>
+                </div>
+                <h4 class="interest-title text-center">Robotics</h4>
+                <p class="text-center interest-desc">
+                  Creating innovative robots and automation systems.
+                </p>
+                <div class="text-center">
+                  <button class="btn btn-btn">Learn More</button>
+                </div>
               </div>
             </div>
-          </div>
           </a>
-          
+        </div>
+        <div class="col-4">
+          <a href="">
+            <div class="card">
+              <div class="card-body">
+                <div class="interest-icon text-center">
+                  <i class="fas fa-fingerprint"></i>
+                </div>
+                <h4 class="interest-title text-center">Cybersecurity</h4>
+                <p class="text-center interest-desc">
+                  Exploring digital security and protecting systems.
+                </p>
+                <div class="text-center">
+                  <button class="btn btn-btn">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -221,40 +223,48 @@
         ><span>Communities I Joined</span
         ><span class="code-title"><i class="bi bi-chevron-right"></i></span>
       </h2>
-        <div class="row">
-          <div class="col-3">
-            <div class="card">
+      <div class="row">
+        <div class="col-3">
+          <a href="" class="text-decoration-none">
+            <div class="card cosmic-card">
               <div class="card-body">
-                <div class="community-image"></div>
                 <h5 class="community-title">Website</h5>
+                <i class="bi bi-arrow-right arrow-icon float-end"></i>
               </div>
             </div>
-          </div>
-          <div class="col-3">
-            <div class="card">
-              <div class="card-body">
-                <div class="community-image"></div>
-                <h5 class="community-title">Website</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="card">
-              <div class="card-body">
-                <div class="community-image"></div>
-                <h5 class="community-title">Website</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="card">
-              <div class="card-body">
-                <div class="community-image"></div>
-                <h5 class="community-title">Website</h5>
-              </div>
-            </div>
-          </div>
+          </a>
         </div>
+        <div class="col-3">
+          <a href="" class="text-decoration-none">
+            <div class="card cosmic-card">
+              <div class="card-body">
+                <h5 class="community-title">Desktop</h5>
+                <i class="bi bi-arrow-right arrow-icon float-end"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-3">
+          <a href="" class="text-decoration-none">
+            <div class="card cosmic-card">
+              <div class="card-body">
+                <h5 class="community-title">Robotics</h5>
+                <i class="bi bi-arrow-right arrow-icon float-end"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-3">
+          <a href="" class="text-decoration-none">
+            <div class="card cosmic-card">
+              <div class="card-body">
+                <h5 class="community-title">Game Dev</h5>
+                <i class="bi bi-arrow-right arrow-icon float-end"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
 
     <footer class="footer text-white text-center">
@@ -274,7 +284,13 @@
     ></script>
     <script src="assets/script.js"></script>
     <script>
-      const textArray = ["Software Engineer", "FullStack Developer", "Robotics & IoT ", "Cybersecurity Enthusiast", "Engineers"];
+      const textArray = [
+        "Software Engineer",
+        "FullStack Developer",
+        "Robotics & IoT ",
+        "Cybersecurity Enthusiast",
+        "Engineers",
+      ];
       let textIndex = 0;
       let charIndex = 0;
       let currentText = "";
