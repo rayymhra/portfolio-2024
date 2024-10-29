@@ -722,3 +722,23 @@ body {
 textarea {
   height: 150px;
 }
+
+.social-section i {
+  font-size: 3rem;
+  color: white;
+  transition: 0.5s all ease ;
+}
+
+.social-section a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s all ease ;
+}
+
+.social-section a:hover {
+  color: #a3a3a3;
+}
+
+.social-section a:hover i {
+  color: #855ab4;
+}
