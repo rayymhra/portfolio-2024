@@ -398,6 +398,9 @@ body {
   color: #a3a3a3;
   margin-left: 5px;
   margin-right: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .below-img-project {
@@ -741,4 +744,59 @@ textarea {
 
 .social-section a:hover i {
   color: #855ab4;
+}
+
+/* SKILLS SKILL */
+
+.section-head-skill {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  margin-top: 8rem;
+}
+
+.back {
+  color: #a3a3a3;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 20px;
+  transition: 0.5s all ease;
+}
+
+.back:hover {
+  color: white;
+}
+
+.html-section-main {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.html-section-main .row {
+  background-color: #292929;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 15px;
+}
+
+.html-cert {
+  border-radius: 7px;
+}
+
+.skill-sub-title {
+  font-size: 23px;
+}
+
+.skill-sub-title-desc {
+  color: #c5c5c5;
+  font-weight: 300;
+}
+
+.skill-project {
+  height: 160px;
+  border-radius: 7px;
+  object-fit: cover;
 }

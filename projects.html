@@ -41,9 +41,100 @@
           </ul>
         </div>
 
+        
+
         <a href="https://drive.google.com/file/d/1KwRDgF66Kc-8WqruvJhsv_Nlc3-zI1oY/view?usp=sharing" target="_blank" class="btn-btn">Resume</a>
       </div>
     </nav>
+
+
+    <section class="projects-section mb-5">
+      <h2 class="text-white mb-5 text-center section-title">
+        <span class="code-title"><i class="bi bi-chevron-left"></i></span
+        ><span>My Projects</span
+        ><span class="code-title"><i class="bi bi-chevron-right"></i></span>
+      </h2>
+    
+      <!-- Button Group for Categories -->
+      <div class="text-center mb-4">
+        <button class="btn btn-outline-light mx-2" onclick="filterProjects('all')">All</button>
+        <button class="btn btn-outline-light mx-2" onclick="filterProjects('web')">Web</button>
+        <button class="btn btn-outline-light mx-2" onclick="filterProjects('desktop')">Desktop</button>
+        <button class="btn btn-outline-light mx-2" onclick="filterProjects('game')">Game</button>
+      </div>
+    
+      <!-- Project Categories -->
+      <div id="project-list" class="row">
+        <!-- All Projects -->
+        <div class="col-4 project-item" data-category="all web">
+          <div class="card project-card">
+            <a href="">
+              <div class="card-body d-flex flex-column">
+                <img src="assets/img/projects/wildflower whimsy.png" alt="" class="project-img w-100" />
+                <div class="below-img-project">
+                  <h6 class="project-title mt-3">Web Project Title 1</h6>
+                  <p class="project-description">Description of Web Project 1</p>
+                  <div class="project-tech-stack">
+                    <span class="badge bg-blur shadow rounded-pill text-white">HTML</span>
+                    <span class="badge bg-blur rounded-pill text-white">CSS</span>
+                  </div>
+                  <div class="project-link d-flex justify-content-end">
+                    <a href=""><i class="bi bi-link-45deg"></i></a>
+                    <a href=""><i class="bi bi-github"></i></a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-4 project-item" data-category="all desktop">
+          <div class="card project-card">
+            <a href="">
+              <div class="card-body d-flex flex-column">
+                <img src="assets/img/projects/wildflower whimsy.png" alt="" class="project-img w-100" />
+                <div class="below-img-project">
+                  <h6 class="project-title mt-3">Desktop Project Title 1</h6>
+                  <p class="project-description">Description of Desktop Project 1</p>
+                  <div class="project-tech-stack">
+                    <span class="badge bg-blur shadow rounded-pill text-white">VB.NET</span>
+                    <span class="badge bg-blur rounded-pill text-white">MySQL</span>
+                  </div>
+                  <div class="project-link d-flex justify-content-end">
+                    <a href=""><i class="bi bi-link-45deg"></i></a>
+                    <a href=""><i class="bi bi-github"></i></a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+        <div class="col-4 project-item" data-category="all game">
+          <div class="card project-card">
+            <a href="">
+              <div class="card-body d-flex flex-column">
+                <img src="assets/img/projects/wildflower whimsy.png" alt="" class="project-img w-100" />
+                <div class="below-img-project">
+                  <h6 class="project-title mt-3">Game Project Title 1</h6>
+                  <p class="project-description">Description of Game Project 1</p>
+                  <div class="project-tech-stack">
+                    <span class="badge bg-blur shadow rounded-pill text-white">Godot</span>
+                  </div>
+                  <div class="project-link d-flex justify-content-end">
+                    <a href=""><i class="bi bi-link-45deg"></i></a>
+                    <a href=""><i class="bi bi-github"></i></a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+        <!-- Repeat for additional projects -->
+      </div>
+    </section>
+    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
@@ -52,5 +143,21 @@
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function filterProjects(category) {
+        const projects = document.querySelectorAll('.project-item');
+    
+        projects.forEach((project) => {
+          // Show all projects if 'all' is selected
+          if (category === 'all') {
+            project.style.display = 'block';
+          } else {
+            // Hide projects that don't match the selected category
+            project.style.display = project.dataset.category.includes(category) ? 'block' : 'none';
+          }
+        });
+      }
+    </script>
+    
 </body>
 </html>
