@@ -354,17 +354,13 @@ body {
 }
 
 .project-card i:hover {
-  background: rgb(178, 111, 203);
-  background: radial-gradient(
-    circle,
-    rgba(178, 111, 203, 1) 0%,
-    rgba(104, 56, 141, 1) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  transition: all 0.5s ease;
+  color: #855ab4;
   border-color: #855ab4;
+}
+
+.noactive {
+  color:#3a3a3a !important;
+  border-color: #3a3a3a !important;
 }
 
 .project-link {
@@ -373,6 +369,8 @@ body {
 
 .project-img {
   border-radius: 15px;
+  height: 188px;
+  object-fit: cover;
 }
 
 .project-title{
@@ -805,4 +803,8 @@ textarea {
   border-radius: 7px;
   height: 240px;
   object-fit: cover;
+}
+
+.github-img {
+  border-radius: 7px;
 }
